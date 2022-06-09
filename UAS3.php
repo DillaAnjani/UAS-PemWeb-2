@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+$koneksi = mysqli_connect('localhost','root','','kasir');
+
 if (isset($_POST['tambahproduk'])){
     
     $nama_produk = $_POST['nama_produk'];
